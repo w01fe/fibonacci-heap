@@ -26,6 +26,7 @@
 package w01fe.fibonacci_heap;
 
 import java.util.ArrayList;
+import clojure.lang.Counted;
 
 /**
  * This class implements a Fibonacci heap data structure. Much of the
@@ -44,7 +45,7 @@ import java.util.ArrayList;
  *
  * @author  Nathan Fiedler
  */
-public class FibonacciHeap {
+public class FibonacciHeap implements Counted {
     /** Points to the minimum node in the heap. */
     private Node min;
     /** Number of nodes in the heap. If the type is ever widened,
@@ -285,6 +286,10 @@ public class FibonacciHeap {
     public int size() {
         return n;
     }
+
+	public int count() {
+		return n;
+	}
 
     /**
      * Joins two Fibonacci heaps into a new one. No heap consolidation is

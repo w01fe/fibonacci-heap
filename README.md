@@ -2,6 +2,8 @@
 
 This project contains a mutable Fibonacci heap data structure, modified from com.bluemarsh.graphmaker.core.util.FibonacciHeap (http://code.google.com/p/graphmaker/) to use Comparable rather than double keys, as well as simple Clojure bindings for this data structure.
 
+The data structure also implements the Counted interface, but not yet Seqable (TODO).
+
 ## Usage
 
 FIXME: write
