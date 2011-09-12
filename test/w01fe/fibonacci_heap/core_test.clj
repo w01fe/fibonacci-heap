@@ -28,6 +28,9 @@
     (dotimes [i 50]
       (is (= (peek-min h) [[i] i]))
       (is (= (remove-min! h) [[i] i])))
+    (decrease-key! h n3 [1] "boo")
+    (is (= (count h) 52))
+    (is (= (peek-min h) [[1] "boo"]))
     (remove! h n1)
     (remove! h n3)
     (dotimes [i 50]

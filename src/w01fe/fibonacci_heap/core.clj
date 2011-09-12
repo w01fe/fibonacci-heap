@@ -45,6 +45,12 @@
   [^FibonacciHeap heap ^FibonacciHeap$Node n]
   (.delete heap n))
 
+(defn decrease-key!
+  "Alter a node, decreasing its key and possibly changing its value."
+  [^FibonacciHeap heap ^FibonacciHeap$Node n ^Comparable k v]
+  (.decreaseKey heap n v k))
+
+
 
 
 
